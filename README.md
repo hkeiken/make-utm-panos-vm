@@ -1,6 +1,6 @@
 # Script to make a UTM vm for PanOS on MacOS
 
-Making a virtual machine on MacOS with newer M1+ Arm based chips are different from how it was on Intel based devices. On Mac the [UTM.app]([https:///](https://mac.getutm.app/)) makes creating virtual machines easier. This is a small script to show how one can automate the generation of a virtual machine for ARM based PanOS to UTM. This might look complex for this simple task, however the longer term goal is to be able to automate more. You have to get hold of the vm-image yourself.
+Making a virtual machine on MacOS with newer M1+ Arm based chips are different from how it was on Intel based devices. On Mac the [UTM.app]([https://mac.getutm.app/]) makes creating virtual machines easier. This is a small script to show how one can automate the generation of a virtual machine for ARM based PanOS to UTM. This might look complex for this simple task, however the longer term goal is to be able to automate more. You have to get hold of the vm-image yourself.
 
 Running the script is easy just use (for example):
 ´´´
