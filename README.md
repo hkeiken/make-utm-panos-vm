@@ -10,7 +10,7 @@ chmod u+x make-utm-panos-vm.sh
 
 Now a new vm named my-panos-vm should show up in the UTM app. However, as the option to set the serial correct was not found, this has to be done manually afterwards by doing
 
-1 - right click edit on the virtual machine
-2 - On Devices Serial, change from "Pseudo-TTY Device" to "Built-in Terminal" and save
+- Right click edit on the virtual machine
+- On Devices Serial, change from "Pseudo-TTY Device" to "Built-in Terminal" and save
 
 Now the virtual machine should be ready to boot
