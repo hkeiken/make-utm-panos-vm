@@ -18,3 +18,7 @@ Now a new vm named my-panos-vm should show up in the UTM app. However, as the op
 ![Image of changing serial](images/utm-change-serial.png)
 
 Now the virtual machine should be ready to boot.
+
+Prequisites:
+- MacOS on a M1+ Mac, tested at updated Sequoia
+- UTM.app, tested at 4.6.5 and pretty sure older will not work 
