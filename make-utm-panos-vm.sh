@@ -4,18 +4,17 @@
 
 args=("$@")
 VM_NAME=${args[0]}
-VM_FILE=${args[1]}
+ARG1=${args[1]}
+VM_FILE=`realpath $ARG1`
 
 echo 
 echo "A simple script to create a new virtual machine in UTM named $VM_NAME for PANOS using $VM_FILE"
 echo "example of use: ./make-utm-panos-vm.sh my-panos-vm PA-VMARM-KVM-11.1.4-h7.qcow2"
-echo
-
-################## UTM IMPORT ############
 
 osascript <<EOF
 set vmFile to POSIX file "$VM_FILE" 
 tell application id "com.utmapp.UTM"
+ set theQemu to {removable:false, source:vmFile, interface:VirtIO}
  set theDrives to {{source:vmFile, interface:VirtIO}}
  set theNetwork to {{mode:shared},{mode:bridged},{mode:shared}}
  set theConfiguration to {name:"$VM_NAME", architecture:"aarch64", memory:7000, cpu cores:2, drives:theDrives, network interfaces:theNetwork}
